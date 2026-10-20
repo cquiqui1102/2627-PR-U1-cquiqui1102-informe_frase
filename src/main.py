@@ -64,14 +64,16 @@ def main():
     """
 
     # Entrada
+
     frase: str = input("Introduzca una frase (a poder ser que contenga 'python'): ")
 
     # Salida
-    numero_caracteres, numero_palabras, palabra_python = analizar_texto(frase)
 
     if not preparar_texto(frase):
         print("La frase introducida está vacía.")
-    else:  
+    else:
+        numero_caracteres, numero_palabras, palabra_python = analizar_texto(frase)
+        
         print(f"Texto: {preparar_texto(frase)}")
         print(f"Caracteres: {numero_caracteres}")
         print(f"Palabras: {numero_palabras}")

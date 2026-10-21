@@ -2,13 +2,13 @@
 
 def preparar_texto(frase: str) -> str:
     """
-    Eliminar los espacios y convertir el texto a minúsculas
+    Eliminar los espacios y convertir el texto a minúsculas.
 
     Args:
-    Frase introducida normal
+    frase = Frase introducida
 
     Returns:
-    Frase completamente en minúsculas
+    str = Frase completamente en minúsculas
 
     """
 
@@ -20,15 +20,13 @@ def preparar_texto(frase: str) -> str:
 
 def analizar_texto(frase: str) -> tuple[int, int, str]:
     """
-    Contar el número de caracteres, el número de palabras y si contiene o no la palabra 'python'
+    Contar el número de caracteres, el número de palabras y si contiene o no la palabra 'python'.
 
     Args:
-    Frase ya preparada introducida
+    frase = Frase ya preparada
 
     Returns:
-    El número de caracteres
-    El número de palabras
-    Si contiene o no la palabra 'python'
+    tuple[int, int, str] = Número de caracteres, Número de palabras, Si contiene o no la palabra 'python'
     
     """
 
@@ -39,7 +37,7 @@ def analizar_texto(frase: str) -> tuple[int, int, str]:
     palabras: list[str] = frase_nueva1.split()
     numero_palabras: int = len(palabras)
 
-    if "python" in frase_nueva1:
+    if "python" in palabras:
         palabra_python = "Sí"
     else:
         palabra_python = "No"
@@ -53,24 +51,24 @@ def main():
     Función principal
 
     Args:
-    Frase introducida por el usuario
+    Frase introducida
 
     Returns:
-    Texto todo a minúsculas
-    El número de caracteres
-    El número de palabras
+    Texto completamente a minúsculas
+    Número de caracteres
+    Número de palabras
     Si contiene o no la palabra 'python'
     
     """
 
     # Entrada
 
-    frase: str = input("Introduzca una frase (a poder ser que contenga 'python'): ")
+    frase: str = input()
 
     # Salida
 
     if not preparar_texto(frase):
-        print("La frase introducida está vacía.")
+        print("ERROR - La frase introducida está vacía.")
     else:
         numero_caracteres, numero_palabras, palabra_python = analizar_texto(frase)
         

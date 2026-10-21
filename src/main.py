@@ -48,16 +48,8 @@ def analizar_texto(frase: str) -> tuple[int, int, str]:
 
 def main():
     """
-    Función principal
-
-    Args:
-    Frase introducida
-
-    Returns:
-    Texto completamente a minúsculas
-    Número de caracteres
-    Número de palabras
-    Si contiene o no la palabra 'python'
+    Función principal:
+    Solicita al usuario una frase y muestra ese texto en minúsculas, el número de caracteres, el número de palabras y si contiene o no la palabra 'python'.
     
     """
 

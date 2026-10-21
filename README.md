@@ -38,3 +38,11 @@ Puedes suponer que las palabras están separadas por espacios y que la frase no 
 Entrega un repositorio PÚBLICO con el nombre **2627-PR-U1-usarioPasen-informe_frase** y tu solución.
 
 ---
+
+## Ejecutado
+
+El programa indica a la perfección los requerimientos.
+
+![Si](imagen/resultado1.png)
+
+![No](imagen/resultado2.png)
